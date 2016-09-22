@@ -10,7 +10,7 @@ pull request to add snippets, make grammar tweaks, etc.
 To use a snippet, simply type one of the available prefixes, then press the tab key (↹). Press ↹ repeatedly to jump to the next hotspot within the snippet.
 
 * `<!--` becomes `<!--/*  */-->`
-* `div` becomes `<div data-sly-=${}>`
-* `sly` becomes `<sly data-sly-=${}>`
+* `div` becomes `<div data-sly-="${}">`
+* `sly` becomes `<sly data-sly-="${}">`
 * `component` becomes `<sly data-sly-use.component="template.html" data-sly-call="${component.template @ properties=properties}" />`
 * `template` becomes `<template data-sly-template.template="${@ properties}"></template>`
