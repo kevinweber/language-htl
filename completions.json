@@ -1,19 +1,60 @@
 {
-    "tags": {
-        "template": {
-            "attributes": ["data-sly-test", "data-sly-list", "dir"]
-        }
+  "tags": {
+    "sly": {
+        "attributes": []
     },
-    "attributes": {
-        "data-sly-test": {
-            "global": "true"
-        },
-        "data-sly-list": {
-            "global": "true"
-        },
-        "dir": {
-            "attribOption": ["ltr", "rtl"],
-            "global": "true"
-        }
+    "template": {
+        "attributes": []
     }
+  },
+  "attributes": {
+    "data-sly-attribute": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-call": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-element": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-include": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-list": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-repeat": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-resource": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-test": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties.", "${itemList.index}", "${itemList.count}", "${itemList.first}", "${itemList.middle}", "${itemList.last}", "${itemList.odd}", "${itemList.even}"]
+    },
+    "data-sly-text": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-template": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-use": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    },
+    "data-sly-unwrap": {
+      "global": "true",
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties."]
+    }
+  }
 }
