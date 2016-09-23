@@ -38,7 +38,7 @@
     },
     "data-sly-test": {
       "global": "true",
-      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties.", "${itemList.index}", "${itemList.count}", "${itemList.first}", "${itemList.middle}", "${itemList.last}", "${itemList.odd}", "${itemList.even}"]
+      "attribOption": ["${properties.", "${pageProperties.", "${inheritedPageProperties.", "${wcmmode.", "${wcmmode.edit}", "${wcmmode.disabled}", "${itemList.index}", "${itemList.count}", "${itemList.first}", "${itemList.middle}", "${itemList.last}", "${itemList.odd}", "${itemList.even}"]
     },
     "data-sly-text": {
       "global": "true",
