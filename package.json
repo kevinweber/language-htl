@@ -1,26 +1,26 @@
 {
-    "name": "language-htl",
-    "description": "HTML Template Language (HTL, formerly Sightly) is the recommended server-side template system for HTML in Adobe Experience Manager (AEM). It increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.",
-    "version": "0.1.0",
-    "main": "./lib/main",
-    "engines": {
-        "atom": "*",
-        "node": "*"
-    },
-    "homepage": "https://github.com/kevinweber/language-htl",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kevinweber/language-htl.git"
-    },
-    "providedServices": {
-        "autocomplete.provider": {
-            "versions": {
-                "2.0.0": "getProvider"
-            }
-        }
-    },
-    "license": "GPL-3",
-    "bugs": {
-        "url": "https://github.com/kevinweber/language-htl/issues"
+  "name": "language-htl",
+  "description": "HTML Template Language (HTL, formerly Sightly) is the recommended server-side template system for HTML in Adobe Experience Manager (AEM). It increases security, and allows HTML developers without Java knowledge to better participate in AEM projects.",
+  "version": "0.2.0",
+  "main": "./lib/main",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/kevinweber/language-htl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinweber/language-htl.git"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
     }
+  },
+  "license": "GPL-3",
+  "bugs": {
+    "url": "https://github.com/kevinweber/language-htl/issues"
+  }
 }
