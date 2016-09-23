@@ -58,6 +58,10 @@
     },
     "data-emptytext": {
       "global": "true"
+    },
+    "class": {
+      "global": "true",
+      "attribOption": ["cq-placeholder"]
     }
   }
 }
