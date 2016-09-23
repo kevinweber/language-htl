@@ -1,0 +1,19 @@
+{
+    "tags": {
+        "template": {
+            "attributes": ["data-sly-test", "data-sly-list", "dir"]
+        }
+    },
+    "attributes": {
+        "data-sly-test": {
+            "global": "true"
+        },
+        "data-sly-list": {
+            "global": "true"
+        },
+        "dir": {
+            "attribOption": ["ltr", "rtl"],
+            "global": "true"
+        }
+    }
+}
