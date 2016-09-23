@@ -94,7 +94,7 @@ module.exports =
   buildTagCompletion: (tag) ->
     text: tag
     type: 'tag'
-    description: "HTML <#{tag}> tag"
+    description: "Special HTML <#{tag}> tag"
     descriptionMoreURL: @getTagDocsURL(tag)
 
   getAttributeNameCompletions: ({editor, bufferPosition}, prefix) ->
@@ -122,7 +122,7 @@ module.exports =
       snippet: "#{attribute}=\"$1\"$0"
       displayText: attribute
       type: 'attribute'
-      description: "Global #{attribute} attribute"
+      description: "HTL block statement"
       descriptionMoreURL: @getGlobalAttributeDocsURL(attribute)
 
   getAttributeValueCompletions: ({editor, bufferPosition}, prefix) ->
@@ -136,12 +136,12 @@ module.exports =
     if @completions.attributes[attribute].global
       text: value
       type: 'value'
-      description: "#{value} value for global #{attribute} attribute"
+      description: "Shortcut for typical HTL value"
       descriptionMoreURL: @getGlobalAttributeDocsURL(attribute)
     else
       text: value
       type: 'value'
-      description: "#{value} value for #{attribute} attribute local to <#{tag}>"
+      description: "#{value} value for #{attribute} local to <#{tag}>"
       descriptionMoreURL: @getLocalAttributeDocsURL(attribute, tag)
 
   loadCompletions: ->
@@ -176,13 +176,13 @@ module.exports =
     @completions.tags[tag]?.attributes ? []
 
   getTagDocsURL: (tag) ->
-    "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/#{tag}"
+    "https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md" #"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/#{tag}"
 
   getLocalAttributeDocsURL: (attribute, tag) ->
-    "#{@getTagDocsURL(tag)}#attr-#{attribute}"
+    "https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md" #"#{@getTagDocsURL(tag)}#attr-#{attribute}"
 
   getGlobalAttributeDocsURL: (attribute) ->
-    "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/#{attribute}"
+    "https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md" #"https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/#{attribute}"
 
 firstCharsEqual = (str1, str2) ->
   str1[0].toLowerCase() is str2[0].toLowerCase()
