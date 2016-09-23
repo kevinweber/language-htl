@@ -6,8 +6,8 @@ attributePattern = /\s+([a-zA-Z][-a-zA-Z]*)\s*=\s*$/
 tagPattern = /<([a-zA-Z][-a-zA-Z]*)(?:\s|$)/
 
 module.exports =
-  selector: '.html.aem'
-  disableForSelector: '.html.aem .comment'
+  selector: '.source.htl.aem'
+  disableForSelector: '.source.htl.aem .comment'
   filterSuggestions: true
 
   getSuggestions: (request) ->
