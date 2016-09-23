@@ -1,4 +1,4 @@
-'.source.htl':
+'.htl.aem':
   'HTL comment':
     'prefix': '<!--'
     'body': '<!--/* $1 */-->\n$0'
@@ -24,7 +24,7 @@
     'descriptionMoreURL': 'https://gist.github.com/kevinweber/954fa85a71d91a85d4e0839b2616d759'
 
 # Don't show/allow snippets in tags
-'.source.htl .meta.tag':
+'.htl.aem .meta.tag':
   'HTL comment':
     'prefix': '<!--'
   'div element with attribute':
