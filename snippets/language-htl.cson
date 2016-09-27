@@ -35,3 +35,53 @@
     'prefix': 'component'
   'New template':
     'prefix': 'template'
+
+# HTL expression options
+'.htl.aem .meta.tag .string.quoted':
+  '@ context':
+    'prefix': '@ c'
+    'body': '@ context=\'$0\''
+
+  '@ domain':
+    'prefix': '@ d'
+    'body': '@ domain=\'$0\''
+
+  '@ extension':
+    'prefix': '@ e'
+    'body': '@ extension=\'$0\''
+
+  '@ format':
+    'prefix': '@ f'
+    'body': '@ format=$0'
+
+  '@ fragment':
+    'prefix': '@ fr'
+    'body': '@ fragment=\'$0\''
+
+  '@ i18n':
+    'prefix': '@ i'
+    'body': '@ i18n$0'
+
+  '@ join':
+    'prefix': '@ j'
+    'body': '@ join=\'$0\''
+
+  '@ path':
+    'prefix': '@ p'
+    'body': '@ path=\'$0\''
+
+  '@ query':
+    'prefix': '@ q'
+    'body': '@ query=\'$0\''
+
+  '@ scheme':
+    'prefix': '@ sc'
+    'body': '@ scheme=\'$0\''
+
+  '@ selectors':
+    'prefix': '@ se'
+    'body': '@ selectors=\'$0\''
+
+  '@ suffix':
+    'prefix': '@ su'
+    'body': '@ suffix=\'$0\''
