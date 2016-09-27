@@ -15,9 +15,7 @@ atom.commands.add 'atom-text-editor',
     scope = editor.scopeDescriptorForBufferPosition([start.row, 0])
     {commentStartString, commentEndString} = editor.languageMode.commentStartAndEndStringsForScope(scope)
 
-    if commentStartString && commentEndString
-      commentStartString = "<!--/* "
-      commentEndString = " */-->"
-      tpl = "#{commentStartString}#{editor.getTextInRange([start, end])}#{commentEndString}"
+    atom.config.set('editor.commentStart', '<!--/* ', {scopeSelector: '.htl.aem'})
+    atom.config.set('editor.commentEnd', ' */-->', {scopeSelector: '.htl.aem'})
 
-      editor.setTextInBufferRange([start, end], tpl)
+    selection.toggleLineComments()
