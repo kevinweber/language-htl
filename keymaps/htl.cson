@@ -1,2 +1,5 @@
 'atom-text-editor[data-grammar*="htl aem"]:not([mini])':
-  'cmd-e': 'emmet:expand-abbreviation'
+    'cmd-e': 'emmet:expand-abbreviation'
+
+'atom-text-editor[data-grammar*="htl aem"]:not([mini])':
+    'cmd-/': 'htl:aem:comment'
