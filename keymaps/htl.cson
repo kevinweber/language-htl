@@ -1,4 +1,4 @@
-'atom-text-editor[data-grammar*="htl aem"]:not([mini])':
+'atom-text-editor[data-grammar*="htl aem"]:not([mini]), .platform-darwin atom-text-editor[data-grammar*="htl aem"]:not([mini])':
     'cmd-e': 'emmet:expand-abbreviation'
 
 'atom-text-editor[data-grammar*="htl aem"]:not([mini])':
