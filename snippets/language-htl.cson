@@ -1,7 +1,7 @@
 '.htl.aem':
   'HTL comment':
     'prefix': '<!--'
-    'body': '<!--/* $1 */-->\n$0'
+    'body': '<!--/* $1 */-->$0'
     'description': 'The content of this comment will be removed from the output.'
     'descriptionMoreURL': 'https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md#119-comments'
 
