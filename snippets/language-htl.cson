@@ -1,4 +1,8 @@
 '.htl.aem':
+  'HTL variable':
+    'prefix': '$'
+    'body': '${$1}$0'
+
   'HTL comment':
     'prefix': '<!--'
     'body': '<!--/* $1 */-->$0'
